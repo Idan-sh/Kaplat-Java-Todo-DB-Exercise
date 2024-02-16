@@ -10,8 +10,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableMongoRepositories(basePackageClasses = MongoTodoRepository.class)
-@EnableJpaRepositories(excludeFilters =
-@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = MongoTodoRepository.class))
 public class ServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ServerApplication.class, args);
