@@ -5,7 +5,7 @@ FROM openjdk
 RUN mkdir /server
 
 # copy the server files from the host machine to the image filesystem
-COPY out/artifacts/java_server_jar/java.server.jar /server/server.jar
+COPY target/server.jar /server
 
 # set the directory for excecuting future commands
 WORKDIR /server
