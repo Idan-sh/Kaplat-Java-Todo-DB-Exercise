@@ -1,14 +1,10 @@
 package com.http.server.java.server.obj;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 
-@Entity
 @Document(collection = "todos")
 public class TodoMongo implements Serializable {
     @Id
